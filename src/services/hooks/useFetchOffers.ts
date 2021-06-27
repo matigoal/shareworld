@@ -21,7 +21,7 @@ export function useFetchOffers<Data = NsOffer.IOfferResult, Error = any>(params:
     if (sort_by) {
         url_params += `&sort_by=${sort_by}`;
     }
-    const url = `http://localhost:3333/offers/search?${url_params}`;
+    const url = `https://shareworld-back.herokuapp.com/offers/search?${url_params}`;
 
     const url = `http://192.168.1.140:3333/offers/search?${url_params}`;
 

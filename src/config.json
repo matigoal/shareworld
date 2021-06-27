@@ -1,4 +1,4 @@
 {
-    "ip": "localhost",
+    "ip": "https://shareworld-back.herokuapp.com/",
     "port": "3333"
 }

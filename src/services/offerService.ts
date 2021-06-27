@@ -35,7 +35,7 @@ const getOffers = async (params: NsOffer.IOfferConditionsParams): Promise<NsOffe
         url_params += `sort_by=${sort_by}`;
     }
     // const url = `http://${config.ip}:${config.port}/offers/search?${url_params}`;
-    const url = `http://localhost:3333/offers/search?${url_params}`;
+    const url = `https://shareworld-back.herokuapp.com/offers/search?${url_params}`;
 
     const fetchResult = await fetch(url);
     const jsonResult: NsOffer.IOfferResult = await fetchResult.json();
@@ -91,7 +91,7 @@ const postOffer = async (params: NsOffer.IOfferDataIn): Promise<Object> => {
         body: formData
     };
 
-    const url = `http://localhost:3333/offers`;
+    const url = `https://shareworld-back.herokuapp.com/offers`;
 
     const fetchResult = await fetch(url, requestOptions);
     const jsonResult = await fetchResult.json();

@@ -5,7 +5,7 @@ import useSWR from 'swr';
 export function useFetchCategories<Data = NsCategory.ICategory[], Error = any>() {
 
 
-    const url = `http://localhost:3333/categories`;
+    const url = `https://shareworld-back.herokuapp.com/categories`;
 
 
     const { data, error } = useSWR<Data, Error>(url, async (url) => {

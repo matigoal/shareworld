@@ -10,8 +10,8 @@ import {Dispatch}  from 'redux';
 describe('login_service', () => {
     let mail = "";
     let password = "";
-    const uri = "http://localhost:3000/auth/login";
-    const uribase = "http://localhost:3000/";
+    const uri = "https://shareworld-back.herokuapp.com/auth/login";
+    const uribase = "https://shareworld-back.herokuapp.com/";
     const _data = {
         mail,
         password
