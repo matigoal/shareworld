@@ -14,7 +14,7 @@ import { addUser } from "../store/actionsCreator";
 
 require("dotenv").config();
 
-const url = "http://localhost:3000/";
+const url = "https://shareworld-back.herokuapp.com/";
 
 // export const signupUser = createAsyncThunk(
 //   'auth/register',
